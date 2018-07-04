@@ -1,0 +1,53 @@
+.header {
+    background-color: yellow;
+    height: auto;
+}
+
+main p, main h2 {
+    margin-left: 6%;
+}
+
+main .form-group {
+    width: 50%;
+}
+
+main {
+    padding: 4%;
+    background-color: lightblue;
+    height: auto;
+}
+
+aside {
+    text-align: center;
+    background-color: lightgreen;
+    height: auto;
+}
+
+h2 {
+    margin-right: 2%;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.slider {
+    background-color: blue;
+    height: 100px;
+}
+
+.footer {
+    background-color: pink;
+    height: 250px;
+}
+
+.commentaire {
+    background-color: lightgrey;
+    overflow: auto;
+    max-height: 150px;
+    ;
+}
+
+h1 {
+    text-align: center;
+}
