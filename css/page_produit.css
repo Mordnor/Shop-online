@@ -1,5 +1,5 @@
 .header {
-    background-color: yellow;
+    background-color: #F8F9FA;
     height: auto;
 }
 
@@ -68,4 +68,12 @@ article h3 {
 
 article p {
    margin-left: 0;
+}
+
+.tchat{
+   height: 386px;
+}
+
+.navbar {
+   justify-content: flex-end;
 }
