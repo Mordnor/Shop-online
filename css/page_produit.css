@@ -31,9 +31,10 @@ h2 {
     background-color: transparent;
 }
 
-.slider {
-    background-color: blue;
-    height: 100px;
+.slider img {
+   max-width: 100%;
+   margin: auto;
+   height: auto;
 }
 
 .footer {
@@ -76,4 +77,8 @@ article p {
 
 .navbar {
    justify-content: flex-end;
+}
+
+.bx-wrapper {
+   margin: auto;
 }

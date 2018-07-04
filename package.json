@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "bxslider": "^4.2.13",
     "jquery": "^3.3.1"
   }
 }
