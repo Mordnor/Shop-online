@@ -3,82 +3,100 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="css/panier.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/page_produit.css" />
     <title>Shop Online</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row no-gutters">
-            <div class="col mb-3" id="header">
-                <h1 class="text-center">Title</h1>
-                <nav class="navbar mx-auto">
-                    <p class="text-center">
-                        NAVBAR
-                    </p>
-                </nav>
+            <div class="col-12 header">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <h1>Shop-Online</h1>
+                    </div>
+
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Dropdown
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <!-- fin de la 1ere div Col -->
+            <div class="col-md-9 mt-3">
+                <main>
+                    <div class="row">
+                        <div class="col-1">
+                            <p>
+                                SB
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="" alt="140x140">
+                        </div>
+                        <div class="col-8">
+                            <h4>Nom de l'article</h4>
+                            <p>Description de l'article</p>
+                            <p>PRIX : ...€</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="col-md-3">
+                <aside class="cart mt-3 mr-0 mb-3 ml-0 mr-md-2 ml-md-2">
+                    <div class="col">
+                        <h2 class="pt-2">TOTAL :</h2>
+                        <h3>TVA : ...€</h3>
+                        <h3>PRIX EN € : ...€</h3>
+                        <button class="mb-2 pb-1" type="button" name="button">PAYER MAINTENANT</button>
+                    </div>
+                </aside>
+            </div>
         </div>
-        <!-- fin de la 1er div row -->
-        <div class="row no-gutters" id="all">
-        <div class="col-md-8">
-        <div class="row no-gutters" id="article">
-            <div class="col-1">
-                <p>
-                    SB
-                </p>
-            </div>
-            <div class="col-3">
-                <img src="" alt="140x140">
-            </div>
-            <div class="col-8">
-                <h4>Nom de l'article</h4>
-                <p>Description de l'article</p>
-                <p>PRIX : ...€</p>
-            </div>
+        <div class="col-12 mb-3 mt-2 mt-md-0 slider">
+            <h1>Slider</h1>
         </div>
+
+        <div class="col-12 footer">
+            <h1>Footer</h1>
+        </div>
+
+
+
     </div>
-    <div class="col-md-4">
-
-        <main class="ml-md-2">
-        <div class="row no-gutters" id="calcule_prix">
-            <div class="col" id="price">
-                <h2>TOTAL :</h2>
-                <h3>TVA : ...€</h3>
-                <h3>PRIX EN € : ...€</h3>
-                <button id="but_total" type="button" name="button">PAYER MAINTENANT</button>
-            </div>
-        </div>
-    </main>
-
-    </div>
-
-    </div>
-        <!--fin de la 2sd div row -->
-
-        <div class="row no-gutters">
-            <div class="col">
-                <div class="bg-dark text-light text-center mt-2">SLIDER</div>
-            </div>
-        </div>
-        <div class="row no-gutters d-none d-md-block text-center">
-            <p>
-                SlideShow
-            </p>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-sm-12 mt-3" id="footer">
-                <div class="text-center">Je suis le footer bonjour!</div>
-            </div>
-        </div>
-        <!-- div class row de la 4eme div row -->
-
-    </div>
-
-    <!-- fin div container -->
 
 
 
