@@ -51,3 +51,21 @@ h2 {
 h1 {
     text-align: center;
 }
+
+
+.pagination {
+   justify-content: center;
+}
+
+article {
+   margin: 2%;
+   padding: 6%;
+}
+
+article h3 {
+   margin: 2% 0;
+}
+
+article p {
+   margin-left: 0;
+}
