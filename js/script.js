@@ -9,8 +9,10 @@ $('.bxslider').bxSlider({
 });
 $(document).ready(function(){
 
+    var GET_PARAM = function(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+    };
 var books = $("#catalogue")
-console.log(catalog[1]["name"]);
 
 for (var i = 0; i < catalog.length; i++) {
 
@@ -25,7 +27,7 @@ for (var i = 0; i < catalog.length; i++) {
               var description = $("<p>");
               $(description).text(catalog[i]["description"]);
               var link = $("<a>");
-              $(link).attr("href", "page_produit.html")
+              $(link).attr("href", "page_produit.html?page_produit_id="+i)
               var button = $("<button>");
               $(button).addClass("btn btn-secondary");
               $(button).text("view more");
@@ -37,6 +39,7 @@ for (var i = 0; i < catalog.length; i++) {
               $(article).append(link);
               $(link).append(button);
 };
-
-
+var i = GET_PARAM("page_produit_id");
+var myproduct = catalog[i];
+console.log(myproduct);
 });
