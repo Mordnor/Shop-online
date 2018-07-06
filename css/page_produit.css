@@ -23,6 +23,11 @@ aside {
     height: auto;
 }
 
+.cart {
+   height: 500px;;
+   overflow: auto;
+}
+
 h2 {
     margin-right: 2%;
 }
@@ -70,6 +75,10 @@ article h3 {
 
 article p {
    margin-left: 0;
+}
+
+.article_produit h3 {
+    margin: 10% 5%;
 }
 
 .tchat{
