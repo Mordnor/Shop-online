@@ -30,8 +30,22 @@ $(document).ready(function() {
     function displayCart() {
         $("#cart ul").html("")
         for (var i in cart) {
-            $("#cart ul").append($(`<li class="list-group-item">${catalog[i].name} x ${cart[i]}</li>`));
+            $("#cart ul").append($(`<li class="list-group-item">${catalog[i].name} x ${cart[i]} | ${catalog[i].price + '€'} = ${catalog[i].price * cart[i]}<button type="button" class="plus" value="${i}">+</button><button type="button" class="moins" value="${i}"></button></li>`));
+
         }
+        $(".plus").click(plus)
+        function plus() {
+            var productId = $(this).val()
+            cart[productId]++;
+            saveCart()
+            displayCart()
+        };
+        $(".moins").click(moins)
+        function moins() {
+            var productId = $(this).val()
+            cart[productId]--;
+            saveCart()
+            displayCart()
     }
 
     loadCart()
@@ -47,11 +61,29 @@ $(document).ready(function() {
         }
         saveCart()
         displayCart()
+        countTotal();
     })
 
     function countTotal() {
+        var total = myproduct['price'] * cart[i];
+
 
     }
+    countTotal();
 
+
+    $(".remove").click(remove)
+    function remove() {
+        $(this).parents('li').remove()
+
+    };
+
+
+
+    // function deleteData(){
+    //     var cart_json = localStorage.removeItem("product");
+    //
+    // }
+    // deleteData()
 
 });
